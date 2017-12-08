@@ -1,0 +1,381 @@
+body{
+  margin:0;
+  box-sizing:border-box;
+}
+
+.Site{
+  display:flex;
+  display:table;
+  height:100%;
+  width:100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header{
+  font-family: 'Roboto', sans-serif;
+  background: rgba(142,177,210,1);
+  background: -moz-linear-gradient(top, rgba(142,177,210,1) 0%, rgba(202,117,137,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(142,177,210,1)), color-stop(100%, rgba(202,117,137,1)));
+  background: -webkit-linear-gradient(top, rgba(142,177,210,1) 0%, rgba(202,117,137,1) 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.header h1{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size:60px;
+  justify-content: center;
+  font-weight:bold;
+  letter-spacing: 1px;
+}
+
+.header nav ul{
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.nav-bar li{
+  padding: 10px;
+}
+.nav-bar li:not(:last-child){
+  border-right: 1px solid #FFFFFF;
+}
+
+.nav-bar li a{
+  text-decoration: none;
+  color: white;
+}
+
+.header p{
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: thin;
+}
+
+.strengths-container h2, .skills h2, .careerpath h2{
+  font-family: 'Roboto', sans-serif;
+  color: #000066;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin:0;
+  padding:30px;
+  background-color: #ffe9e5;
+}
+
+.Site-content{
+  flex: 1;
+  height:100%;
+  padding-bottom: 80px;
+}
+
+/*strengths*/
+.strengths-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.strengths{
+  background: url(../images/full-brain.png) center no-repeat;
+  background-size: 45em, auto, contain;
+  display:flex;
+  flex:6;
+  justify-content: center;
+}
+
+.strengths-column-1{
+  display:flex;
+  flex:2;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.space-holder{
+  display:flex;
+  flex:2;
+  padding:6em;
+}
+
+.strengths-column-2{
+  display:flex;
+  flex:2;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 50px;
+}
+
+.strengths-blurb p{
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  color:#acac8e;
+}
+
+.strengths-blurb-left{
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  color:#acac8e;
+  padding-left:75px;
+}
+
+.strengths-blurb-time{
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  color:#acac8e;
+  padding-top: 30px;
+}
+
+.strengths h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #000059;
+  border-bottom: 2px solid #ffa495;
+}
+
+/*skills*/
+.skills-content{
+  display:flex;
+  flex-direction: row;
+  flex:3;
+  height:85vh;
+  margin-bottom: 50px;
+  padding-top: 2em;
+}
+
+.skills-content>img{
+  flex:1;
+  height:85vh;
+  width:15em;
+}
+
+.skills-words-container{
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  padding-right: 1em;
+  justify-content: space-between;
+}
+
+.skills-stuffs{
+  display:flex;
+  flex-direction: row;
+  flex:3;
+}
+
+.skills-stuffs img{
+  flex:1;
+  margin:.5em;
+}
+
+.words{
+  flex:2;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:.5em;
+}
+
+.words h3{
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #acac8e;
+  padding: 5px;
+}
+
+.words p{
+  font-family: 'Raleway', sans-serif;
+  color:#acac8e;
+  margin:0;
+  padding-bottom:5px;
+}
+
+/*career path*/
+.career-path-content{
+  display:flex;
+  flex-direction: row;
+  flex:7;
+  padding:3em;
+}
+
+.career-path-content h3{
+  font-family: 'Roboto', sans-serif;
+}
+.career-path-content p{
+  font-family: 'Raleway', sans-serif;
+}
+
+.path-column-1{
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:1em;
+}
+
+.path-column-2{
+  display:flex;
+  flex:2;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.path-column-3{
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 75px;
+}
+
+.path-column-4{
+  display:flex;
+  flex:3;
+}
+
+.path-img{
+  padding-top:30px;
+}
+
+.path-column-5{
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 240px
+}
+
+.path-column-6{
+  display:flex;
+  flex:2;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 210px;
+}
+
+.path-column-7{
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding:1em;
+  padding-top: 205px;
+}
+
+/*form*/
+.contact{
+  text-align: center;
+  background-color: #acac8e;
+  height:10em;
+}
+
+.contact a{
+  padding:10px;
+}
+
+.contact h2{
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin:0;
+  padding:30px;
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+  .strengths-container{
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .strengths-column-2 {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 105px 50px;
+  }
+  .strengths{
+    background: url(../images/full-brain.png) center no-repeat;
+    background-size: 40em, auto, contain;
+    display:flex;
+    flex:6;
+    justify-content: center;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+  .strengths-container{
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .strengths{
+    background: url(../images/full-brain.png) center no-repeat;
+    background-size: 40em, auto, contain;
+    display:flex;
+    flex:6;
+    justify-content: center;
+  }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+  .strengths-container{
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .strengths{
+    background: url(../images/full-brain.png) center no-repeat;
+    background-size: 40em, auto, contain;
+    display:flex;
+    flex:6;
+    justify-content: center;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+  .strengths-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+  .strengths-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-content>img{
+    flex:1;
+    height:85vh;
+    width:15em;
+  }
+}
