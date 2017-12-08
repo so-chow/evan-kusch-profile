@@ -274,15 +274,24 @@ body{
   padding-top: 205px;
 }
 
-/*form*/
+/*contact*/
 .contact{
   text-align: center;
   background-color: #acac8e;
-  height:10em;
+  height:13em;
+}
+
+.footer{
+  padding:4.5em;
 }
 
 .contact a{
   padding:10px;
+}
+
+.contact img{
+  height: 3em;
+  width: 3em;
 }
 
 .contact h2{
