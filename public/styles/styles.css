@@ -27,7 +27,7 @@ body{
 .header h1{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  font-size:60px;
+  font-size:7vh;
   justify-content: center;
   font-weight:bold;
   letter-spacing: 1px;
@@ -37,6 +37,7 @@ body{
   list-style-type: none;
   padding:0;
   margin: 0;
+  font-size: 2.5vh;
 }
 
 .nav-bar{
@@ -62,6 +63,7 @@ body{
   font-family: 'Raleway', sans-serif;
   font-style: italic;
   font-weight: thin;
+  font-size: 2vh;
 }
 
 .strengths-container h2, .skills h2, .careerpath h2{
@@ -72,6 +74,7 @@ body{
   margin:0;
   padding:30px;
   background-color: #ffe9e5;
+  font-size: 3vh;
 }
 
 .Site-content{
@@ -121,6 +124,7 @@ body{
   font-family: 'Raleway', sans-serif;
   text-align: left;
   color:#acac8e;
+  font-size:2vh;
 }
 
 .strengths-blurb-left{
@@ -142,6 +146,8 @@ body{
   font-weight: bold;
   color: #000059;
   border-bottom: 2px solid #ffa495;
+  font-size:2vh;
+  text-align:center;
 }
 
 /*skills*/
@@ -193,6 +199,7 @@ body{
   font-weight: bold;
   color: #acac8e;
   padding: 5px;
+  font-size:3vh;
 }
 
 .words p{
@@ -200,6 +207,7 @@ body{
   color:#acac8e;
   margin:0;
   padding-bottom:5px;
+  font-size:2.5vh;
 }
 
 /*career path*/
@@ -209,12 +217,16 @@ body{
   flex:7;
   padding:3em;
 }
-
+.career-path-content .dates{
+  display:none;
+}
 .career-path-content h3{
   font-family: 'Roboto', sans-serif;
+  font-size:3vh;
 }
 .career-path-content p{
   font-family: 'Raleway', sans-serif;
+  font-size:2.4vh;
 }
 
 .path-column-1{
@@ -278,11 +290,11 @@ body{
 .contact{
   text-align: center;
   background-color: #acac8e;
-  height:13em;
+  height:15em;
 }
 
 .footer{
-  padding:4.5em;
+  padding:4em;
 }
 
 .contact a{
@@ -290,8 +302,8 @@ body{
 }
 
 .contact img{
-  height: 3em;
-  width: 3em;
+/*  height: 3vh;
+  width: 3em;*/
 }
 
 .contact h2{
@@ -345,7 +357,7 @@ body{
 
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/*/* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
   .strengths-container{
@@ -360,7 +372,7 @@ body{
     flex:6;
     justify-content: center;
   }
-}
+}*/
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
@@ -388,3 +400,57 @@ body{
     width:15em;
   }
 }
+
+/* iphone Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .space-holder{
+      display: none;
+    }
+    .strengths{
+      background: url(../images/full-brain.png) center no-repeat;
+      background-size: 60em, auto, contain;
+      display: flex;
+      flex-direction: column;
+    }
+    .strengths-column-1, .strengths-column-2{
+      background-color:rgba(255,255,255, 0.8);
+
+    }
+    .strengths-blurb-left{
+      padding: 0;
+    }
+    .skills-head, .skills-branch{
+      display:none;
+    }
+    .skills-words-container{
+      padding:0;
+    }
+    .skills-stuffs img{
+      flex:0;
+    }
+    .career-path-content{
+      flex-direction: column;
+    }
+    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
+      display:none;
+    }
+    .path-column-6{
+      padding: 0;
+    }
+    .contact img{
+      height:6vh;
+      width:10vw;
+    }
+    .career-path-content h3{
+      margin-bottom:0;
+    }
+    .career-path-content .dates{
+     display:inline-block;
+     margin-top:.5vh;
+}
+
+}
+
