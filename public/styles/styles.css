@@ -132,6 +132,7 @@ body{
   text-align: left;
   color:#acac8e;
   padding-left:75px;
+  font-size:2vh;
 }
 
 .strengths-blurb-time{
@@ -139,6 +140,7 @@ body{
   text-align: left;
   color:#acac8e;
   padding-top: 30px;
+  font-size:2vh;
 }
 
 .strengths h3{
@@ -400,6 +402,111 @@ body{
     width:15em;
   }
 }
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+.space-holder{
+      display: none;
+    }
+    .strengths{
+      background: url(../images/full-brain.png) center no-repeat;
+      background-size: 60em, auto, contain;
+      display: flex;
+      flex-direction: column;
+    }
+    .strengths-column-1, .strengths-column-2{
+      background-color:rgba(255,255,255, 0.8);
+
+    }
+    .strengths-blurb-left{
+      padding: 0;
+    }
+    .skills-head, .skills-branch{
+      display:none;
+    }
+    .skills-words-container{
+      padding:0;
+    }
+    .skills-stuffs img{
+      flex:0;
+    }
+    .career-path-content{
+      flex-direction: column;
+    }
+    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
+      display:none;
+    }
+    .path-column-6{
+      padding: 0;
+    }
+    .contact img{
+      height:6vh;
+      width:10vw;
+    }
+    .career-path-content h3{
+      margin-bottom:0;
+    }
+    .career-path-content .dates{
+     display:inline-block;
+     margin-top:.5vh;
+}
+}
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4) {
+.space-holder{
+      display: none;
+    }
+    .strengths{
+      background: url(../images/full-brain.png) center no-repeat;
+      background-size: 60em, auto, contain;
+      display: flex;
+      flex-direction: column;
+    }
+    .strengths-column-1, .strengths-column-2{
+      background-color:rgba(255,255,255, 0.8);
+
+    }
+    .strengths-blurb-left{
+      padding: 0;
+    }
+    .skills-head, .skills-branch{
+      display:none;
+    }
+    .skills-words-container{
+      padding:0;
+    }
+    .skills-stuffs img{
+      flex:0;
+    }
+    .career-path-content{
+      flex-direction: column;
+    }
+    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
+      display:none;
+    }
+    .path-column-6{
+      padding: 0;
+    }
+    .contact img{
+      height:6vh;
+      width:10vw;
+    }
+    .career-path-content h3{
+      margin-bottom:0;
+    }
+    .career-path-content .dates{
+     display:inline-block;
+     margin-top:.5vh;
+}
+}
 
 /* iphone Portrait and Landscape */
 @media only screen
@@ -453,4 +560,157 @@ body{
 }
 
 }
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px){
+.space-holder{
+      display: none;
+    }
+    .strengths{
+      background: url(../images/full-brain.png) center no-repeat;
+      background-size: 60em, auto, contain;
+      display: flex;
+      flex-direction: column;
+    }
+    .strengths-column-1, .strengths-column-2{
+      background-color:rgba(255,255,255, 0.8);
+
+    }
+    .strengths-blurb-left{
+      padding: 0;
+    }
+    .skills-head, .skills-branch{
+      display:none;
+    }
+    .skills-words-container{
+      padding:0;
+    }
+    .skills-stuffs img{
+      flex:0;
+    }
+    .career-path-content{
+      flex-direction: column;
+    }
+    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
+      display:none;
+    }
+    .path-column-6{
+      padding: 0;
+    }
+    .contact img{
+      height:6vh;
+      width:10vw;
+    }
+    .career-path-content h3{
+      margin-bottom:0;
+    }
+    .career-path-content .dates{
+     display:inline-block;
+     margin-top:.5vh;
+}
+  }
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+.space-holder{
+      display: none;
+    }
+    .strengths{
+      background: url(../images/full-brain.png) center no-repeat;
+      background-size: 60em, auto, contain;
+      display: flex;
+      flex-direction: column;
+    }
+    .strengths-column-1, .strengths-column-2{
+      background-color:rgba(255,255,255, 0.8);
+
+    }
+    .strengths-blurb-left{
+      padding: 0;
+    }
+    .skills-head, .skills-branch{
+      display:none;
+    }
+    .skills-words-container{
+      padding:0;
+    }
+    .skills-stuffs img{
+      flex:0;
+    }
+    .career-path-content{
+      flex-direction: column;
+    }
+    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
+      display:none;
+    }
+    .path-column-6{
+      padding: 0;
+    }
+    .contact img{
+      height:6vh;
+      width:10vw;
+    }
+    .career-path-content h3{
+      margin-bottom:0;
+    }
+    .career-path-content .dates{
+     display:inline-block;
+     margin-top:.5vh;
+}
+}
+
+@media screen
+  and (device-width: 320px)
+  and (device-height: 568px){
+    .space-holder{
+      display: none;
+    }
+    .strengths{
+      background: url(../images/full-brain.png) center no-repeat;
+      background-size: 60em, auto, contain;
+      display: flex;
+      flex-direction: column;
+    }
+    .strengths-column-1, .strengths-column-2{
+      background-color:rgba(255,255,255, 0.8);
+
+    }
+    .strengths-blurb-left{
+      padding: 0;
+    }
+    .skills-head, .skills-branch{
+      display:none;
+    }
+    .skills-words-container{
+      padding:0;
+    }
+    .skills-stuffs img{
+      flex:0;
+    }
+    .career-path-content{
+      flex-direction: column;
+    }
+    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
+      display:none;
+    }
+    .path-column-6{
+      padding: 0;
+    }
+    .contact img{
+      height:6vh;
+      width:10vw;
+    }
+    .career-path-content h3{
+      margin-bottom:0;
+    }
+    .career-path-content .dates{
+     display:inline-block;
+     margin-top:.5vh;
+}
+  }
 
