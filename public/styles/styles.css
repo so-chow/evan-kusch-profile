@@ -120,7 +120,7 @@ body{
   padding: 50px;
 }
 
-.strengths-blurb p{
+.strengths-blurb p, .strengths-blurb-left, .strengths-blurb-time{
   font-family: 'Raleway', sans-serif;
   text-align: left;
   color:#acac8e;
@@ -128,28 +128,23 @@ body{
 }
 
 .strengths-blurb-left{
-  font-family: 'Raleway', sans-serif;
-  text-align: left;
   color:#acac8e;
   padding-left:75px;
-  font-size:2vh;
 }
 
 .strengths-blurb-time{
-  font-family: 'Raleway', sans-serif;
-  text-align: left;
   color:#acac8e;
   padding-top: 30px;
-  font-size:2vh;
 }
 
-.strengths h3{
+.strengths h3, .words h3, .career-path-content h3{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #000059;
   border-bottom: 2px solid #ffa495;
-  font-size:2vh;
+  font-size:2.5vh;
   text-align:center;
+  margin: 1vh;
 }
 
 /*skills*/
@@ -182,9 +177,10 @@ body{
   flex:3;
 }
 
-.skills-stuffs img{
-  flex:1;
-  margin:.5em;
+.skills-stuffs>img{
+  margin:3.5vh;
+  height:9vh;
+  display: flex;
 }
 
 .words{
@@ -192,24 +188,15 @@ body{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  padding:.5em;
-}
-
-.words h3{
-  margin:0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  color: #acac8e;
-  padding: 5px;
-  font-size:3vh;
+  padding:.5vh;
 }
 
 .words p{
   font-family: 'Raleway', sans-serif;
   color:#acac8e;
   margin:0;
-  padding-bottom:5px;
-  font-size:2.5vh;
+  padding-bottom:1vh;
+  font-size:2vh;
 }
 
 /*career path*/
@@ -217,18 +204,20 @@ body{
   display:flex;
   flex-direction: row;
   flex:7;
-  padding:3em;
+  padding:.7em;
 }
 .career-path-content .dates{
   display:none;
 }
-.career-path-content h3{
-  font-family: 'Roboto', sans-serif;
-  font-size:3vh;
+
+.career-path-content .path-icons{
+  height: 7vh;
 }
+
 .career-path-content p{
   font-family: 'Raleway', sans-serif;
   font-size:2.4vh;
+  color: #acac8e;
 }
 
 .path-column-1{
@@ -244,6 +233,7 @@ body{
   flex:2;
   flex-direction: column;
   justify-content: space-around;
+  padding:.5em;
 }
 
 .path-column-3{
@@ -276,7 +266,8 @@ body{
   flex:2;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-top: 210px;
+  padding-top: 35vh;
+  padding-left: 2vh;
 }
 
 .path-column-7{
@@ -290,9 +281,11 @@ body{
 
 /*contact*/
 .contact{
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   background-color: #acac8e;
-  height:15em;
+  height:24vh;
+  font-size:1.5vh;
 }
 
 .footer{
@@ -300,12 +293,13 @@ body{
 }
 
 .contact a{
-  padding:10px;
+  text-decoration: none;
+  color:#000000;
 }
 
 .contact img{
-/*  height: 3vh;
-  width: 3em;*/
+  height: 5vh;
+  margin: 1vh;
 }
 
 .contact h2{
@@ -317,64 +311,6 @@ body{
   padding:30px;
 }
 
-/* iPhone 6+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-  .strengths-container{
-    min-height: 55vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .strengths-column-2 {
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 105px 50px;
-  }
-  .strengths{
-    background: url(../images/full-brain.png) center no-repeat;
-    background-size: 40em, auto, contain;
-    display:flex;
-    flex:6;
-    justify-content: center;
-  }
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-  .strengths-container{
-    min-height: 55vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .strengths{
-    background: url(../images/full-brain.png) center no-repeat;
-    background-size: 40em, auto, contain;
-    display:flex;
-    flex:6;
-    justify-content: center;
-  }
-
-}
-
-/*/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-  .strengths-container{
-    min-height: 55vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .strengths{
-    background: url(../images/full-brain.png) center no-repeat;
-    background-size: 40em, auto, contain;
-    display:flex;
-    flex:6;
-    justify-content: center;
-  }
-}*/
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
@@ -384,11 +320,10 @@ body{
     display: flex;
     flex-direction: column;
   }
-
 }
 
 /* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
+@media only screen and (min-width : 1824px) {
 /* Styles */
   .strengths-container{
     min-height: 100vh;
@@ -402,271 +337,20 @@ body{
     width:15em;
   }
 }
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-
-/* Portrait and Landscape */
-@media screen
-  and (device-width: 320px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3) {
-.space-holder{
-      display: none;
-    }
-    .strengths{
-      background: url(../images/full-brain.png) center no-repeat;
-      background-size: 60em, auto, contain;
-      display: flex;
-      flex-direction: column;
-    }
-    .strengths-column-1, .strengths-column-2{
-      background-color:rgba(255,255,255, 0.8);
-
-    }
-    .strengths-blurb-left{
-      padding: 0;
-    }
-    .skills-head, .skills-branch{
-      display:none;
-    }
-    .skills-words-container{
-      padding:0;
-    }
-    .skills-stuffs img{
-      flex:0;
-    }
-    .career-path-content{
-      flex-direction: column;
-    }
-    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
-      display:none;
-    }
-    .path-column-6{
-      padding: 0;
-    }
-    .contact img{
-      height:6vh;
-      width:10vw;
-    }
-    .career-path-content h3{
-      margin-bottom:0;
-    }
-    .career-path-content .dates{
-     display:inline-block;
-     margin-top:.5vh;
-}
-}
-
-/* Portrait and Landscape */
-@media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 4) {
-.space-holder{
-      display: none;
-    }
-    .strengths{
-      background: url(../images/full-brain.png) center no-repeat;
-      background-size: 60em, auto, contain;
-      display: flex;
-      flex-direction: column;
-    }
-    .strengths-column-1, .strengths-column-2{
-      background-color:rgba(255,255,255, 0.8);
-
-    }
-    .strengths-blurb-left{
-      padding: 0;
-    }
-    .skills-head, .skills-branch{
-      display:none;
-    }
-    .skills-words-container{
-      padding:0;
-    }
-    .skills-stuffs img{
-      flex:0;
-    }
-    .career-path-content{
-      flex-direction: column;
-    }
-    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
-      display:none;
-    }
-    .path-column-6{
-      padding: 0;
-    }
-    .contact img{
-      height:6vh;
-      width:10vw;
-    }
-    .career-path-content h3{
-      margin-bottom:0;
-    }
-    .career-path-content .dates{
-     display:inline-block;
-     margin-top:.5vh;
-}
-}
 
 /* iphone Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .space-holder{
-      display: none;
-    }
-    .strengths{
-      background: url(../images/full-brain.png) center no-repeat;
-      background-size: 60em, auto, contain;
-      display: flex;
-      flex-direction: column;
-    }
-    .strengths-column-1, .strengths-column-2{
-      background-color:rgba(255,255,255, 0.8);
-
-    }
-    .strengths-blurb-left{
-      padding: 0;
-    }
-    .skills-head, .skills-branch{
-      display:none;
-    }
-    .skills-words-container{
-      padding:0;
-    }
-    .skills-stuffs img{
-      flex:0;
-    }
-    .career-path-content{
-      flex-direction: column;
-    }
-    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
-      display:none;
-    }
-    .path-column-6{
-      padding: 0;
-    }
-    .contact img{
-      height:6vh;
-      width:10vw;
-    }
-    .career-path-content h3{
-      margin-bottom:0;
-    }
-    .career-path-content .dates{
-     display:inline-block;
-     margin-top:.5vh;
-}
-
-}
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* Portrait and Landscape *//* ----------- Galaxy S4, S5 and Note 3 ----------- */
 @media screen
-  and (device-width: 360px)
-  and (device-height: 640px){
-.space-holder{
-      display: none;
-    }
-    .strengths{
-      background: url(../images/full-brain.png) center no-repeat;
-      background-size: 60em, auto, contain;
-      display: flex;
-      flex-direction: column;
-    }
-    .strengths-column-1, .strengths-column-2{
-      background-color:rgba(255,255,255, 0.8);
-
-    }
-    .strengths-blurb-left{
-      padding: 0;
-    }
-    .skills-head, .skills-branch{
-      display:none;
-    }
-    .skills-words-container{
-      padding:0;
-    }
-    .skills-stuffs img{
-      flex:0;
-    }
-    .career-path-content{
-      flex-direction: column;
-    }
-    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
-      display:none;
-    }
-    .path-column-6{
-      padding: 0;
-    }
-    .contact img{
-      height:6vh;
-      width:10vw;
-    }
-    .career-path-content h3{
-      margin-bottom:0;
-    }
-    .career-path-content .dates{
-     display:inline-block;
-     margin-top:.5vh;
-}
-  }
-
-/* Portrait and Landscape */
-@media screen
+  and (device-width: 320px)
+  and (device-height: 568px), only screen
   and (device-width: 320px)
   and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3) {
-.space-holder{
-      display: none;
-    }
-    .strengths{
-      background: url(../images/full-brain.png) center no-repeat;
-      background-size: 60em, auto, contain;
-      display: flex;
-      flex-direction: column;
-    }
-    .strengths-column-1, .strengths-column-2{
-      background-color:rgba(255,255,255, 0.8);
-
-    }
-    .strengths-blurb-left{
-      padding: 0;
-    }
-    .skills-head, .skills-branch{
-      display:none;
-    }
-    .skills-words-container{
-      padding:0;
-    }
-    .skills-stuffs img{
-      flex:0;
-    }
-    .career-path-content{
-      flex-direction: column;
-    }
-    .path-img, .path-column-1, .path-column-3, .path-column-5, .path-column-7{
-      display:none;
-    }
-    .path-column-6{
-      padding: 0;
-    }
-    .contact img{
-      height:6vh;
-      width:10vw;
-    }
-    .career-path-content h3{
-      margin-bottom:0;
-    }
-    .career-path-content .dates{
-     display:inline-block;
-     margin-top:.5vh;
-}
-}
-
-@media screen
-  and (device-width: 320px)
-  and (device-height: 568px){
+  and (-webkit-device-pixel-ratio: 3), only screen
+  and (device-width: 360px)
+  and (device-height: 640px), only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2){
     .space-holder{
       display: none;
     }
@@ -711,6 +395,29 @@ body{
     .career-path-content .dates{
      display:inline-block;
      margin-top:.5vh;
-}
+    }
+    .skills-stuffs img{
+      display:none;
+    }
+    .words p{
+      font-size: 3vh;
+    }
+    .words h3{
+      font-size: 3vh;
+    }
   }
 
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .words p{
+      font-size:1.5vh;
+    }
+    .skills-stuffs>img{
+      height: 6vh;
+    }
+}
